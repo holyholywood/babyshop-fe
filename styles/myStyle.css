@@ -1,0 +1,23 @@
+@keyframes openNavAct {
+  0% {
+    width: 100%;
+    position: absolute;
+  }
+  100% {
+    width: 100vw;
+    position: absolute;
+  }
+}
+
+.closedNav {
+  width: 100vw;
+}
+.openNav {
+  width: 100vw;
+  position: absolute;
+  -webkit-transition: width 1s linear;
+  -moz-transition: width 1s linear;
+  -o-transition: width 1s linear;
+  transition: width 1s linear;
+  animation: openNavAct 0.5s linear;
+}

@@ -1,6 +1,7 @@
+import "../styles/globals.css";
+import "../styles/myStyle.css";
 import type { AppProps } from "next/app";
 import { Rubik } from "@next/font/google";
-import CssBaseline from "@mui/material/CssBaseline";
 
 const rubikFonts = Rubik({
   weight: "400",
@@ -8,9 +9,8 @@ const rubikFonts = Rubik({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={rubikFonts.className}>
-      <CssBaseline />
+    <div className={rubikFonts.className + " antialiased"}>
       <Component {...pageProps} />
-    </main>
+    </div>
   );
 }
