@@ -5,9 +5,8 @@ import { BiBell, BiLogIn, BiChevronRight, BiChevronLeft } from "react-icons/bi";
 interface TopbarPropsInterface {
   toggleNav: () => void;
   isNavOpen: boolean;
-  setIsNavOpen: Dispatch<SetStateAction<boolean>>;
 }
-const Topbar = ({ toggleNav, isNavOpen, setIsNavOpen }: TopbarPropsInterface) => {
+const Topbar = ({ toggleNav, isNavOpen }: TopbarPropsInterface) => {
   return (
     <div className="flex items-center gap-8">
       <button
@@ -17,7 +16,7 @@ const Topbar = ({ toggleNav, isNavOpen, setIsNavOpen }: TopbarPropsInterface) =>
         {isNavOpen ? <BiChevronRight className="" /> : <BiChevronLeft className="" />}
       </button>
       <div className="w-full items-center flex justify-between">
-        <h1 className="text-gray-900 text-3xl font-bold">Dashboard</h1>
+        <h1 className="text-gray-900 text-2xl font-bold tracking-wider">Overview</h1>
         <div className="flex items-center gap-4">
           <Tooltip title="Show Notification's">
             <button className="rounded-lg bg-gray-200 p-2 hover:shadow border border-gray-300 hover:text-gray-600 hover:bg-gray-200 duration-200 text-gray-500 text-xl">
