@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .homeCard {
+    @apply bg-white h-36 rounded-lg px-2 py-3 shadow-2xl;
+  }
+  .homeCard-icon {
+    @apply mx-auto rounded-full -mt-8 grid place-items-center text-white p-3 w-fit;
+  }
+  .homeCard-value {
+    @apply text-5xl text-gray-500 font-bold tracking-wider text-center w-full inline-block mt-3;
+  }
+  .homeCard-title {
+    @apply text-lg text-gray-400 tracking-wide text-center w-full inline-block mt-5;
+  }
+  .red {
+    @apply bg-red-400;
+  }
+  .green {
+    @apply bg-green-400;
+  }
+  .amber {
+    @apply bg-amber-400;
+  }
+  .violet {
+    @apply bg-violet-400;
+  }
+  .blue {
+    @apply bg-blue-400;
+  }
+}

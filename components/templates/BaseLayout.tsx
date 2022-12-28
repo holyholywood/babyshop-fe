@@ -24,7 +24,7 @@ const BaseLayout = ({
             isNavOpen ? "openNav" : "closedNav"
           }`}
         >
-          <Topbar toggleNav={toggleNav} isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+          <Topbar toggleNav={toggleNav} isNavOpen={isNavOpen} />
           <section className="pt-10">{children}</section>
         </main>
       </main>
